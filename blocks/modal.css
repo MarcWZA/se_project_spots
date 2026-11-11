@@ -39,12 +39,15 @@
   color: #212121;
   opacity: 0.4;
   cursor: pointer;
-  transition: transform 0.3s ease-in-out;
+  transition:
+    transform 0.3s ease-in-out,
+    opacity 0.3s ease-in-out;
 }
 
 .modal__close-btn:hover,
 .modal__close-btn:focus-visible {
   transform: rotate(90deg);
+  opacity: 1;
 }
 
 .modal__title {
@@ -75,6 +78,11 @@
   box-sizing: border-box;
   max-width: 630px;
   width: 100%;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.modal__input:hover {
+  border-color: #212121;
 }
 
 .modal__input::placeholder {
@@ -89,6 +97,11 @@
   background-color: #212121;
   color: #fff;
   cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.modal__submit-btn:hover {
+  background-color: #212121cc;
 }
 
 @media screen and (max-width: 650px) {
