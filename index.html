@@ -120,6 +120,60 @@
       <footer class="footer page__section">
         <p class="footer__text">2023 © Spots</p>
       </footer>
+      <div class="modal modal_is-opened">
+        <div class="modal__container">
+          <button class="modal__close-btn" type="button"></button>
+          <h2 class="modal__title">Edit profile</h2>
+          <form class="modal__form">
+            <label class="modal__label" for="profile-name-input">
+              Name
+              <input
+                class="modal__input"
+                id="profile-name-input"
+                type="text"
+                placeholder="Type your name"
+              />
+            </label>
+            <label class="modal__label" for="profile-description-input">
+              Description
+              <input
+                class="modal__input"
+                id="profile-description-input"
+                type="text"
+                placeholder="Describe yourself"
+              />
+            </label>
+            <button class="modal__submit-btn" type="submit">Save</button>
+          </form>
+        </div>
+      </div>
+      <div class="modal modal_is-opened">
+        <div class="modal__container">
+          <button class="modal__close-btn" type="button"></button>
+          <h2 class="modal__title">New post</h2>
+          <form class="modal__form">
+            <label class="modal__label" for="image-link-input">
+              Image link
+              <input
+                class="modal__input"
+                id="image-link-input"
+                type="url"
+                placeholder="Paste a link to the picture"
+              />
+            </label>
+            <label class="modal__label" for="caption-input">
+              Caption
+              <input
+                class="modal__input"
+                id="caption-input"
+                type="text"
+                placeholder="Type your caption"
+              />
+            </label>
+            <button class="modal__submit-btn" type="submit">Save</button>
+          </form>
+        </div>
+      </div>
     </div>
   </body>
 </html>
